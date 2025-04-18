@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Adventures</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🌍 Travel Adventures</h1>
+    <nav>
+      <ul>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#reviews-section">Reviews</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Destination Section -->
+    <section id="destinations">
+      <h2>Top Travel Destinations</h2>
+      <div class="destination" id="bali">
+        <img src="bali.jpg" alt="Bali" />
+        <h3>Bali</h3>
+        <p>Explore the beautiful beaches and cultural heritage of Bali, Indonesia.</p>
+        <button onclick="showWeather('bali')">Show Weather</button>
+        <div id="bali-weather"></div>
+      </div>
+      <!-- Add more destinations as needed -->
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews-section">
+      <h2>User Reviews</h2>
+      <div class="review">
+        <h3>Bali</h3>
+        <div class="stars" id="bali-stars"></div>
+        <textarea id="bali-review" placeholder="Leave a review..."></textarea>
+        <button onclick="submitReview('bali')">Submit Review</button>
+        <div id="bali-rating"></div>
+      </div>
+      <!-- Add more review sections as needed -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Travel Adventures. All Rights Reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
